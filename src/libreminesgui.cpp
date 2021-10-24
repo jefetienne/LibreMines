@@ -1333,7 +1333,7 @@ void LibreMinesGui::SLOT_minesLeft(const ushort minesLeft)
 void LibreMinesGui::SLOT_flagCell(const uchar _X, const uchar _Y)
 {
     if(principalMatrix[_X][_Y].button->isHidden())
-        qDebug(Q_FUNC_INFO);
+        qDebug() << Q_FUNC_INFO;
     else
     {
         principalMatrix[_X][_Y].button->setIcon(QIcon(*pmFlag));

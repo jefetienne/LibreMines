@@ -1,0 +1,14 @@
+id: org.Bollos00.LibreMines
+runtime: org.kde.Platform
+runtime-version: '5.15'
+sdk: org.kde.Sdk
+command: libremines
+modules:
+    - name: libremines
+      buildsystem: cmake
+#      config-opts:
+#        - -DCMAKE_INSTALL_PREFIX=/usr/local ..
+      sources:
+        - type: archive
+          url: https://github.com/Bollos00/LibreMines/archive/refs/tags/v1.6.2.tar.gz
+          sha256: 3296d4656d2860bc691a6dffcf784dfacf2b7922840df9396ecb7f85e6166f6e
